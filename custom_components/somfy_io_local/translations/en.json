@@ -1,0 +1,86 @@
+{
+  "title": "Somfy io Local ESP",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect an ESP",
+        "data": {
+          "host": "ESP IP address",
+          "name": "ESP name",
+          "token": "ESP access token"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid ESP token.",
+      "cannot_connect": "Cannot connect to a compatible ESP gateway.",
+      "invalid_input": "Invalid input or no supported devices.",
+      "ownership_conflict": "Invalid input, duplicate radio identity, or conflicting device ownership.",
+      "import_failed": "Import failed. Check the IP address, gateway PIN, and developer API token.",
+      "assignment_failed": "Assignment failed. The previous ESP must be reachable and have no pending commands."
+    },
+    "abort": {
+      "single_instance_allowed": "Add more ESP gateways through the options of the existing integration."
+    }
+  },
+  "options": {
+    "step": {
+      "gateway": {
+        "title": "Add an ESP / update connection",
+        "data": {
+          "host": "ESP IP address",
+          "name": "ESP name",
+          "token": "ESP access token"
+        }
+      },
+      "tahoma": {
+        "title": "Import from TaHoma Switch",
+        "data": {
+          "host": "TaHoma IP address",
+          "pin": "Gateway PIN (1234-5678-9012)",
+          "token": "TaHoma local API token"
+        }
+      },
+      "import_json": {
+        "title": "Import a saved TaHoma device list",
+        "data": {
+          "devices_json": "Device list JSON"
+        }
+      },
+      "assign": {
+        "title": "Assign a cover to an ESP",
+        "data": {
+          "device": "Shutter / venetian blind",
+          "gateway": "Controlling ESP"
+        }
+      },
+      "init": {
+        "title": "Somfy io Local",
+        "menu_options": {
+          "gateway": "Add an ESP / update connection",
+          "tahoma": "Import from TaHoma Switch",
+          "import_json": "Import a saved TaHoma device list",
+          "assign": "Assign a cover to an ESP"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid ESP token.",
+      "cannot_connect": "Cannot connect to a compatible ESP gateway.",
+      "invalid_input": "Invalid input or no supported devices.",
+      "ownership_conflict": "Invalid input, duplicate radio identity, or conflicting device ownership.",
+      "import_failed": "Import failed. Check the IP address, gateway PIN, and developer API token.",
+      "assignment_failed": "Assignment failed. The previous ESP must be reachable and have no pending commands."
+    },
+    "abort": {
+      "no_devices": "Import devices first."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "signal_strength": {
+        "name": "Signal strength"
+      }
+    }
+  }
+}

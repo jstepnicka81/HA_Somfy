@@ -1,0 +1,26 @@
+# Local credentials and recordings
+private/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+!custom_components/somfy_io_local/overkiz-root-ca.pem
+*.p12
+*.pfx
+*.log
+*.cu8
+*.iq
+*.bin
+*.elf
+*.map
+# Local builds and environments
+.pio/
+.venv/
+.device-venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+.idea/
+.DS_Store

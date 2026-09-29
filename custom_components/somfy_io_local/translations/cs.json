@@ -1,0 +1,86 @@
+{
+  "title": "Somfy io Local ESP",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Připojit ESP",
+        "data": {
+          "host": "IP adresa ESP",
+          "name": "Název ESP",
+          "token": "Přístupový token ESP"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Nesprávný token ESP.",
+      "cannot_connect": "Nelze se připojit ke kompatibilnímu ESP.",
+      "invalid_input": "Neplatné údaje nebo žádná podporovaná zařízení.",
+      "ownership_conflict": "Neplatné údaje, duplicitní rádiová identita nebo konflikt přiřazení.",
+      "import_failed": "Import se nezdařil. Ověřte IP, PIN a token vývojářského API.",
+      "assignment_failed": "Přiřazení se nezdařilo. Původní ESP musí být dostupné a nesmí mít rozpracované povely."
+    },
+    "abort": {
+      "single_instance_allowed": "Další ESP přidejte přes Nastavení existující integrace."
+    }
+  },
+  "options": {
+    "step": {
+      "gateway": {
+        "title": "Přidat ESP / změnit připojení",
+        "data": {
+          "host": "IP adresa ESP",
+          "name": "Název ESP",
+          "token": "Přístupový token ESP"
+        }
+      },
+      "tahoma": {
+        "title": "Import z TaHoma Switch",
+        "data": {
+          "host": "IP adresa TaHomy",
+          "pin": "PIN brány (1234-5678-9012)",
+          "token": "Token lokálního API TaHomy"
+        }
+      },
+      "import_json": {
+        "title": "Import uloženého seznamu TaHomy",
+        "data": {
+          "devices_json": "JSON seznam zařízení"
+        }
+      },
+      "assign": {
+        "title": "Přiřadit roletu k ESP",
+        "data": {
+          "device": "Roleta / žaluzie",
+          "gateway": "Řídicí ESP"
+        }
+      },
+      "init": {
+        "title": "Somfy io Local",
+        "menu_options": {
+          "gateway": "Přidat ESP / změnit připojení",
+          "tahoma": "Import z TaHoma Switch",
+          "import_json": "Import uloženého seznamu TaHomy",
+          "assign": "Přiřadit roletu k ESP"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Nesprávný token ESP.",
+      "cannot_connect": "Nelze se připojit ke kompatibilnímu ESP.",
+      "invalid_input": "Neplatné údaje nebo žádná podporovaná zařízení.",
+      "ownership_conflict": "Neplatné údaje, duplicitní rádiová identita nebo konflikt přiřazení.",
+      "import_failed": "Import se nezdařil. Ověřte IP, PIN a token vývojářského API.",
+      "assignment_failed": "Přiřazení se nezdařilo. Původní ESP musí být dostupné a nesmí mít rozpracované povely."
+    },
+    "abort": {
+      "no_devices": "Nejprve importujte zařízení."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "signal_strength": {
+        "name": "Síla signálu"
+      }
+    }
+  }
+}
