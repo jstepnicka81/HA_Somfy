@@ -1,9 +1,19 @@
+HA_Somfy
+Project author: Jan Stepnicka
+
+This project provides the ESP gateway adaptation and Home Assistant integration.
+The attribution below identifies upstream work, not the author of HA_Somfy.
+
+Preserved upstream notice (from the radio implementation):
+--------------------------------------------------------
 ESPHome io-homecontrol
 Copyright 2026 Charly Schulte
 
 This product includes software adapted from iohomecontrol
 (https://github.com/rspaargaren/iohomecontrol), licensed under the Apache
 License, Version 2.0.
+
+End of preserved upstream notice.
 
 Somfy and io-homecontrol are trademarks of their respective owners. This
 project is independent and is not affiliated with or endorsed by Somfy.
